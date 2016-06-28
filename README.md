@@ -2,12 +2,13 @@
 容器在ovs环境下的限速,可以做到限制上传和下载的流量
 
 # 使用说明
-将ovs-limit脚本 复制到/usr/local/sbin 下，执行chmod +x /usr/local/sbin/ovs-limit
-cp ovs-limit /usr/local/sbin & chmod +x /usr/local/sbin/ovs-limit
+1.将ovs-limit脚本 复制到/usr/local/sbin 下,执行chmod +x /usr/local/sbin/ovs-limit
 
-限制容器某个网卡的带宽，单位为：Mbps
-ovs-limit is limit container nic commands, bandwidth default Mbps
+  cp ovs-limit /usr/local/sbin & chmod +x /usr/local/sbin/ovs-limit
 
+2.限制容器某个网卡的带宽，单位为：Mbps
+  ovs-limit is limit container nic commands, bandwidth default Mbps
+3.命令使用方法
 ovs-limit  limit <container name> <container_nic> <bandwidth>
 ovs-limit  ulimit <container name> <container_nic>
 
