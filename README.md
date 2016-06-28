@@ -6,19 +6,19 @@
 
   <p>cp ovs-limit /usr/local/sbin & chmod +x /usr/local/sbin/ovs-limit</p>
 
-2.限制容器某个网卡的带宽，单位为：Mbps
-  ovs-limit is limit container nic commands, bandwidth default Mbps
-3.命令使用方法
-ovs-limit  limit <container name> <container_nic> <bandwidth>
-ovs-limit  ulimit <container name> <container_nic>
+ <p>2.限制容器某个网卡的带宽，单位为：Mbps</p>
+  <p> ovs-limit is limit container nic commands, bandwidth default Mbps</p>
+ <p>3.命令使用方法</p>
+ <p>ovs-limit  limit <container name> <container_nic> <bandwidth></p>
+ <p>ovs-limit  ulimit <container name> <container_nic></p>
 
-例子：
-限制容器gw-8.254容器的eth2带宽为5M
-Example limit container gw-8.254 eth2 5M:
-  ovs-limit  limit gw-8.254 eth2 5
+ <p>例子：</p>
+ <p>限制容器gw-8.254容器的eth2带宽为5M</p>
+ <p>Example limit container gw-8.254 eth2 5M:</p>
+ <p>  ovs-limit  limit gw-8.254 eth2 5</p>
   
-解除容器gw-8.254容器的eth2带宽限制
-Example clear network limit:
-  ovs-limit  ulimit  gw-8.254 eth2
+ <p>解除容器gw-8.254容器的eth2带宽限制</p>
+ <p>Example clear network limit:</p>
+ <p>  ovs-limit  ulimit  gw-8.254 eth2</p>
   
   
